@@ -15,22 +15,53 @@
 
 
 <body>
-
-
-     <form action="/inicio/cadastrar" method="POST">
      
-          <label for="marca"> Marca </label>
-          <input type="text" name="marca" placeholder="marca"><br>
-          
-          <label for="modelo"> Modelo </label>
-          <input type="text" name="modelo" placeholder="modelo"><br>  
-                  
-     
-          <label for="modelo"> Imagem </label>
-          <input type="file" name="modelo" placeholder="modelo"><br>
-          <input type="submit"><br><br>
+        <div class="container text-center --bs-border-color border border-success p-5 mb-5" > 
+           <h1 >BEM VINDO - TARIFA WEB </h1> 
+         </div>
     
+    
+         <div class="container-sm w-50 p-3">
+         
+         
+         <div class="container bg-primary-subtle fs-3 text" >              
+             Cadastrar             
+         </div> 
+       
+ 
+
+    <div style="padding-left:3px" class="container bg-primary-subtle">
+     <form   action="/inicio/cadastrar" method="POST">
+     
+      <div class="form-group mt-2">
+	          <label for="marca"> Marca </label>
+	          <input class="form-control-sm mt-1" type="text" name="marca" placeholder="marca">
+	   </div>      
+	    
+	   <div class="form-group mt-2">    
+	          <label for="modelo "> Modelo </label>
+	          <input class="form-control-sm mt-1" type="text" name="modelo" placeholder="modelo">
+	   </div>
+	   
+	   	   <div class="form-group mt-2">    
+	          <label for="serie"> Série </label>
+	          <input class="form-control-sm mt-1" type="text" name="serie" placeholder="serie">
+	   </div>              
+	     
+	  <div class="form-group mt-2">   
+	          <label for="modelo"> Imagem </label>
+	          <input class="custom-file-input mt-1" type="file" name="modelo" placeholder="modelo">
+	  </div>
+	  
+	   <div class="form-group mt-3 "> 
+	          <input class="btn btn-primary" type="submit">    
+    </div>
      </form>
+</div>
+
+</div>  
+
+
 
 
 </body>

@@ -12,11 +12,18 @@ public class RequisicaoCadastroEquipamento {
 	
 	private String marca;
 	private String modelo;
+	private String serie;
 	private Blob imagem;
 	
 	
 	public String getMarca() {
 		return marca;
+	}
+	public String getSerie() {
+		return serie;
+	}
+	public void setSerie(String serie) {
+		this.serie = serie;
 	}
 	public void setMarca(String marca) {
 		this.marca = marca;
@@ -35,11 +42,12 @@ public class RequisicaoCadastroEquipamento {
 	}
 	public Equipamento toEquipamento() {
 		
-		Equipamento equipamento = new Equipamento();
+		Equipamento equipamento = new Equipamento();		
 		
+		equipamento.setImagem(imagem);		
 		equipamento.setMarca(marca);
-		equipamento.setModelo(modelo);
-		equipamento.setImagem(imagem);
+		equipamento.setModelo(modelo);	
+		equipamento.setSerie(serie);
 		
 		return equipamento;
 		

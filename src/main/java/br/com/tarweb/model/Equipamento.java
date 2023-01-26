@@ -8,6 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 
 @Entity(name="Equipamentos")
 public class Equipamento {
@@ -16,7 +17,16 @@ public class Equipamento {
 	private Long id;
 	private String marca;
 	private String modelo;
+	private String serie;
+	
 	private Blob imagem;
+	public String getSerie() {
+		return serie;
+	}
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
+
 	
 	
 	public Blob getImagem() {

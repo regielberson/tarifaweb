@@ -19,7 +19,9 @@ public class Equipamento {
 	private String modelo;
 	private String serie;
 	
-	private Blob imagem;
+	private String imagem;
+	
+	
 	public String getSerie() {
 		return serie;
 	}
@@ -29,10 +31,10 @@ public class Equipamento {
 
 	
 	
-	public Blob getImagem() {
+	public String getImagem() {
 		return imagem;
 	}
-	public void setImagem(Blob imagem) {
+	public void setImagem(String imagem) {
 		this.imagem = imagem;
 	}
 	public String getMarca() {

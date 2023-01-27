@@ -19,19 +19,22 @@
 
  <body>
  
+     teste
  
- 
-
-    <div th:each="equipamentos:${equipamentos">
+ <div class= "card mb-3" th:each="equipamentos:${equipamentos}">
+    
+    <div>
+    
+    
     
     
      <div th:text="${equipamentos.marca}"> Marca </div>
       <div th:text="${equipamentos.modelo}"> Modelo </div>
        <div th:text="${equipamentos.serie}"> Serie </div>
-        <div th:text="${equipamentos.imagem}"> Marca </div>
+        <div th:text="${equipamentos.imagem}"> Marca </div>    
         
-        
-
+   
+     </div>
     
     
     

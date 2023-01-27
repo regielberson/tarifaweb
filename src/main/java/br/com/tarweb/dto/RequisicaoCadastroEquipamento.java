@@ -13,7 +13,7 @@ public class RequisicaoCadastroEquipamento {
 	private String marca;
 	private String modelo;
 	private String serie;
-	private Blob imagem;
+	private String imagem;
 	
 	
 	public String getMarca() {
@@ -34,10 +34,10 @@ public class RequisicaoCadastroEquipamento {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	public Blob getImagem() {
+	public String getImagem() {
 		return imagem;
 	}
-	public void setImagem(Blob imagem) {
+	public void setImagem(String imagem) {
 		this.imagem = imagem;
 	}
 	public Equipamento toEquipamento() {

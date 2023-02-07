@@ -2,13 +2,10 @@ package br.com.tarweb.model;
 
 
 
-import java.sql.Blob;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.NotBlank;
 
 @Entity(name="Equipamentos")
 public class Equipamento {

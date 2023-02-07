@@ -16,8 +16,6 @@
          
       <title > Lista de Equipamentos </title>
 
-
-
  <body>
  
    <div class="container text-center --bs-border-color border border-success p-5 mb-5">
@@ -25,17 +23,28 @@
     <h1 class="display-4" > Lista de Equipamentos </h1>
    </div>
  
+  
+<div class="container mb-5">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/inicio/cadastro">Home</a>
+      <a class="navbar-brand" href="/inicio/listar">Lista </a>
+    </div>
+  </nav>
+</div>
+  
  
-   <div class=body> 
+   <div >
 	 <div th:each="equipamentos:${equipamentos}">   
-		   <div  class="container mb-3"  >   
-		    		     
-		      <div class="col-md-2" th:text="${equipamentos.marca}"> </div>
-		      <div class="col-md-2" th:text="${equipamentos.modelo}"></div>
-		      <div class="col-md-2" th:text="${equipamentos.serie}">  </div>
+		   <div  class="container  "  >   
+		     <div class ="col-md-5" >	     
+			      <div class="fw-bolder fs-3" th:text="${equipamentos.marca}"> </div>
+			      <div th:text="${equipamentos.modelo}"></div>
+			      <div  th:text="${equipamentos.serie}">  </div>
+		      </div>
 		      
-		      <div class="img-thumbnail rounded float-start">		       
-		      <img class="img-thumbnail" th:src="${equipamentos.imagem}" src=""/>  		      
+		      <div class=" col-md-5 img-thumbnail rounded-0 w-25 p-3">		       
+		          <img class="img-thumbnail" th:src="${equipamentos.imagem}" src=""/>  		      
 		      </div>
 		       
 		  
